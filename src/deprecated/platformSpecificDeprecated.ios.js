@@ -257,6 +257,10 @@ function navigatorSetTitle(navigator, params) {
   });
 }
 
+function navigatorSetStyle(navigator, params) {
+  Controllers.NavigationControllerIOS(navigator.navigatorID).setStyle(params)
+}
+
 function navigatorSetTitleImage(navigator, params) {
   Controllers.NavigationControllerIOS(navigator.navigatorID).setTitleImage({
     titleImage: params.titleImage
@@ -501,6 +505,7 @@ export default {
   navigatorToggleDrawer,
   navigatorToggleTabs,
   navigatorSetTabBadge,
+  navigatorSetStyle,
   navigatorSwitchToTab,
   navigatorToggleNavBar
 };
