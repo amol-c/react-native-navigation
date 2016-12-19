@@ -23,6 +23,7 @@ public abstract class SplashActivity extends AppCompatActivity {
         super.onResume();
 
         if (NavigationApplication.instance.getReactGateway().hasStartedCreatingContext()) {
+            finish();
             return;
         }
 
