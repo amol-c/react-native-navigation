@@ -219,7 +219,7 @@ const NSInteger TRANSPARENT_NAVBAR_TAG = 78264803;
 // we want to reset the style to what we expect (so we need to reset on every willAppear)
 - (void)setStyleOnAppear
 {
-    [self setStyleOnAppearForViewController:self appeared:false];
+    [self setStyleOnAppearForViewController:self];
 }
 
 -(void)setStyleOnAppearForViewController:(UIViewController*)viewController
